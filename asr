@@ -71,3 +71,68 @@ o do hive
 
 1.24 o que o hive veio solucionar em relação ao hadoop
 facilitar as consultas pois utiliza sql, o hadoop utiliza java
+
+2.1 quais os principais componentes do hive?
+meta store, hiveserver2, mysql, hive client
+
+2.2 o que é armazenado no metastore do hive?
+metadados, informações de tabela(bd, tipo de dados, views e etc)
+
+2.3 que componente usamos para acessar o hive?
+o hive client
+
+2.4 o que é hcatalog?
+é o catalogo do hive, armazena metadados
+
+2.5 onde ficam os metadados do hive?
+ficam no hcatalog
+
+2.6 qual banco de dados por padrao ficam os metadados do hive
+hcatalog usando o bd mysql por padrao
+
+2.7 qual é o motor de execução (execution engine) por padrao do hive?
+map reduce
+
+2.8 quais as alternativas de motor de execução ao hive?
+tez, spark
+
+2.9 o que é schema on read?
+a definição dos metadados podem ser definida na leitura dos dados
+
+2.10 qual caracteristica diferente de um banco de dados que o hive tem em tabelas?
+apontam para um arquivo no hdfs
+podem estar em diferente formatos
+um mesmo arquivo pode pertencer a diferente tabelas
+um arquivo pode ser manipulado por outra aplicação
+apagar a tabela apaga os metadados, não os arquivos
+
+2.11 quando apagamos uma tabela no hive o que acontece?
+apagamos o metadados nao o arquivo
+
+2.12 os arquivos do hive tem quais formatos?
+diferentes formatos
+
+2.13 arquivos no hive pode pertencer a quais tabelas?
+diferente tabelas
+
+2.14 o que sao os banco de dados do hive?
+sao um conjunto de tabelas definidos em um schema
+
+2.15 Os arquivos do banco de dados do hive, são exclusivos?
+nao, pq o mesmo arquivo pode estar em diferentes tabelas em diferentes banco de dados
+
+2.16 fisicamente qual é o padrao de path do banco de dados?
+/user/hive/warehouse
+
+2.17 onde estao as principais configurações do hive?
+hive-site.xml
+
+2.18 para qual uso é o shell do beeline?
+alterar configurações do hive ex set hive.default.fileformat = Orc, hive.default.fileformat.managed = Orc
+
+2.19 quais sao as 4 categorias de configuração do hive?
+configuration variables
+metastore configuration variables
+configuration variables do hadoop
+run time information
+
