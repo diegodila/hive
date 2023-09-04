@@ -12,7 +12,7 @@ map reduce e hdfs
 processamento
 
 1.5. o que é o hdfs?
-sistemas de arquivo distribuido
+sistemas de arquivos distribuido
 
 1.6. qual a analogia do hadoop?
 imagine que voce precisa construir uma casa, 1 pedreiro levaria 1 ano, um super pedreiro levaria 11 meses, ao inves disso eu contrato 5 pedreiros trabalhando em parelelo coordenado por uma engenheiro levando 3 meses para construção
@@ -21,7 +21,7 @@ imagine que voce precisa construir uma casa, 1 pedreiro levaria 1 ano, um super 
 contratava-se um super pedreiro, porem existia limites fisicos para esse aumento
 
 1.8. qual era a solução para limites fisicos de processamento?
-coloca-se varios servidores trabalhando em conjunto
+colocava-se varios servidores trabalhando em conjunto
 
 1.9. dentro da analogia da construção o que é master e slaves?
 master - engenheiros
@@ -99,7 +99,7 @@ tez, spark
 2.9 o que é schema on read?
 a definição dos metadados podem ser definida na leitura dos dados
 
-2.10 qual caracteristica diferente de um banco de dados que o hive tem em tabelas?
+2.10 quais caracteristicas diferentes de um banco de dados que o hive tem em tabelas?
 apontam para um arquivo no hdfs
 podem estar em diferente formatos
 um mesmo arquivo pode pertencer a diferente tabelas
@@ -115,11 +115,11 @@ diferentes formatos
 2.13 arquivos no hive pode pertencer a quais tabelas?
 diferente tabelas
 
-2.14 o que sao os banco de dados do hive?
+2.14 o que sao os bancos de dados do hive?
 sao um conjunto de tabelas definidos em um schema
 
 2.15 Os arquivos do banco de dados do hive, são exclusivos?
-nao, pq o mesmo arquivo pode estar em diferentes tabelas em diferentes banco de dados
+nao, pq o mesmo arquivo pode estar em diferentes tabelas em diferentes bancos de dados
 
 2.16 fisicamente qual é o padrao de path do banco de dados?
 /user/hive/warehouse
