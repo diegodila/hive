@@ -136,3 +136,98 @@ metastore configuration variables
 configuration variables do hadoop
 run time information
 
+12.1 Quais os principais tipos de tabela que hive tem?
+external e internal
+
+12.2 qual tipo de tabela que temos quando o hive nao controla o arquivo?
+external
+
+12.3 qual tipo de tabela que temos quando o acesso exclusivo pelo hive?
+internal
+
+12.4 qual tipo de tabela que temos quando excluir a tabela exlui o arquivo fisico?
+internal
+
+12.5 quando nos conectamos ao hive, por padrao qual o banco de dados que ele se conecta?
+default
+
+12.6 qual o comando para mudar de banco de dados do hive para o banco LOCACAO
+USE LOCACAO;
+
+12.7 como criar uma tabela externa chamada CLIENTES com esses requisitos:
+colunas 
+(idcliente int
+cnh string
+cpf string
+validade date
+nome string
+datacadastro date
+datanascimento date
+telefone string
+status string)
+a linha deve ter a delimitação de , (virgula) e deve ser armazenado com textfile
+e deve ser carregado de um path do hdfs dentro da table CLIENTES;
+
+CREATE EXTERNAL TABLE CLIENTES (idcliente int,
+cnh string,
+cpf string,
+validade date,
+nome string,
+datacadastro date,
+datanascimento date,
+telefone string,
+status string) row format delimited fields terminated by ','  STORED AS TEXTFILE;
+LOAD DATA INPATH 'opt/hive/locacao/clientes.csv' INTO TABLE CLIENTES;
+SELECT * FROM CLIENTES;
+
+12.8 o que faz a propriedade de tabela imutable?
+nao permite mais inserir dados
+
+12.9 qual é a propriedade de tabela que faz a compressao no formato orc?
+orc.compress
+
+12.10 o que faz a o propriedade de tabela skip.header.line.count?
+ignora linhas iniciais (cabeçalhos)
+
+13.1 como criar um diretorio no hdfs
+hdfs dfs -mkdir <diretorio>
+
+13.2 como copiar um arquivo de fora do container para o container
+docker cp arquivos hive4:/opt/hive/arquivos
+
+13.3 como copiar todos os arquivos csv usando hdfs para outra pasta
+hdfs dfs -put <file> <dir>
+
+13.4 como mostrar banco de dados do hive
+show databases;
+
+13.5 como deletar uma banco de dados com tabelas dentro
+drop database <nome banco> cascade;
+
+13.6 como se conectar ao beeline atraves do start hive cli?
+/opt/hive/bin/hive
+!connect jdbc:hive2://localhost:10000/
+
+
+14.1 crie uma tabela veiculos e faça a carga com o csv chamado veiculos que está no path do hdfs /opt/hive/locacao/veiculos.csv
+create external table veiculos (idveiculo int, dataaquisicao date, ano int, modelo string, placa string, status string, diaria double) 
+row format delimited fields terminated by ',' stored as textfile;
+LOAD DATA INPATH '/opt/hive/locacao/veiculos.csv' INTO TABLE VEICULOS;
+
+15.1 como descrever os metadados da tabela no hive, forma simples e detalhada
+describe <tabela>, describe formatted <locacao>;
+
+15.2 como descrever os metadados da tabela com as informacoes do banco de dados
+describe database <locacao>;
+
+15.3 o banco default do hive existe fisicamente?
+nao, apenas logicamente
+
+15.4 como consultar no hcatalog os bancos de dados escritos no metadados
+select * from dbs;
+
+15.5 qual é a tabela do mysql quem tem as tabelas do hive, faça o comando para selecionar ela
+select * from tbls where db_id=10;
+
+
+
