@@ -208,7 +208,6 @@ drop database <nome banco> cascade;
 /opt/hive/bin/hive
 !connect jdbc:hive2://localhost:10000/
 
-
 14.1 crie uma tabela veiculos e faça a carga com o csv chamado veiculos que está no path do hdfs /opt/hive/locacao/veiculos.csv
 create external table veiculos (idveiculo int, dataaquisicao date, ano int, modelo string, placa string, status string, diaria double) 
 row format delimited fields terminated by ',' stored as textfile;
@@ -228,6 +227,29 @@ select * from dbs;
 
 15.5 qual é a tabela do mysql quem tem as tabelas do hive, faça o comando para selecionar ela
 select * from tbls where db_id=10;
+
+18.1 o que é o hive?
+The Apache Hive ™ is a distributed, fault-tolerant data warehouse system that enables analytics at a massive scale and facilitates reading, writing, and managing petabytes of data residing in distributed storage using SQL.
+
+
+27.1 como carregar dados do sistema de arquivos local para o hive?
+LOAD DATA LOCAL INPATH '/home/diegodila/arquivo.csv' INTO TABLE CLIENTES;
+
+27.2 como criar uma tabela no hive a partir de outra tabela?
+create table locacao2 as select * from locacao where iddespachante = 2;
+
+27.3 como fazer um insert em outro banco de dados?
+create database teste;
+create table teste.locacao 2 as select * from locacao where iddespachante = 2;
+use teste;
+select total from locacao2;
+drop database teste cascade;
+
+27.4 Como start o banco de dados postgres no docker
+docker exec -it docker-hive-hive-metastore-postgresql-1 psql -U postgres
+docker exec -it docker-hive-hive-metastore-postgresql-1 sh ;  psql --username postgres ; SELECT datname FROM pg_catalog.pg_database;
+
+
 
 
 

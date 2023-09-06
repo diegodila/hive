@@ -1,0 +1,20 @@
+docker-compose up -d
+docker-compose exec hive-server bash
+/opt/hive/bin/beeline -u jdbc:hive2://localhost:10000
+
+docker exec -it docker-hive-hive-metastore-postgresql-1 psql -U postgres
+\c metastore
+\dt #show tables
+
+\l - Display database
+\c - Connect to database
+\dn - List schemas
+\dt - List tables inside public schemas
+\dt schema1. - List tables inside particular schemas. For eg: 'schema1'.
+
+select * from public."DBS";
+
+
+https://www.commandprompt.czom/education/postgresql-list-all-tables/#:~:text=PostgreSQL%20provides%20a%20%E2%80%9C%5Cdt%E2%80%9D,size%2C%20access%20method%2C%20etc.
+https://www.beekeeperstudio.io/blog/how-to-list-databases-in-postgres#:~:text=In%20summary%2C%20to%20list%20databases,with%20information%20about%20each%20database.
+https://geshan.com.np/blog/2\021/12/docker-postgres/
