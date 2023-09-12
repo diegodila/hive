@@ -249,7 +249,30 @@ drop database teste cascade;
 docker exec -it docker-hive-hive-metastore-postgresql-1 psql -U postgres
 docker exec -it docker-hive-hive-metastore-postgresql-1 sh ;  psql --username postgres ; SELECT datname FROM pg_catalog.pg_database;
 
+27.5 como localizar as pastas disponiveis no hdfs?
+hdfs dfs -ls /
 
+30.1 o sqoop é uma ferramenta de qual ecossistema?
+hadoop
 
+30.2 o que é sqoop?
+é uma ferramenta para importação de dados rdbms
+
+30.3 como que o sqoop importa os dados?
+atraves de um drive jdbc, importa de diferente banco de dados usando a mesma ferramenta por abstração
+
+30.4 quantas tarefas o sqoop cria em paralelo por padrao para importar dados
+4
+
+30.5 como o sqoop dividi as tarefas para importação de dados?
+usando a chave primaria
+
+30.6 quando surge novos registros, o sqoop da suporte? e como?
+modo incremental usando o append para tabela que tem inclusao de novos registros
+
+30.7 como funciona o lastmodified do sqoop?
+ele uitliza o um timestamp no registros para verificar quais dados precisam de atualizaçao
+
+30.8
 
 

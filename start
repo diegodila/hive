@@ -18,3 +18,6 @@ select * from public."DBS";
 https://www.commandprompt.czom/education/postgresql-list-all-tables/#:~:text=PostgreSQL%20provides%20a%20%E2%80%9C%5Cdt%E2%80%9D,size%2C%20access%20method%2C%20etc.
 https://www.beekeeperstudio.io/blog/how-to-list-databases-in-postgres#:~:text=In%20summary%2C%20to%20list%20databases,with%20information%20about%20each%20database.
 https://geshan.com.np/blog/2\021/12/docker-postgres/
+https://data-flair.training/blogs/top-hadoop-hdfs-commands-tutorial/
+https://sparkbyexamples.com/apache-hadoop/hadoop-how-to-list-files-and-directories-using-hdfs-dfs/
+https://github.com/Pathairush/airflow_hive_spark_sqoop/blob/main/docker/hadoop/conf/sqoop-env.sh
