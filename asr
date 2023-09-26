@@ -15,7 +15,7 @@ processamento
 sistemas de arquivos distribuido
 
 1.6. qual a analogia do hadoop?
-imagine que voce precisa construir uma casa, 1 pedreiro levaria 1 ano, um super pedreiro levaria 11 meses, ao inves disso eu contrato 5 pedreiros trabalhando em parelelo coordenado por um engenheiro levando 3 meses para construção
+imagine que voce precisa construir uma casa, 1 pedreiro levaria 1 ano, um super pedreiro levaria 11 meses, ao inves disso eu contrato 5 pedreiros trabalhando em paralelo coordenado por um engenheiro levando 3 meses para construção
 
 1.7. dentro analogia da construção o que acontecia antes quando se precisava de mais capacidade de processamento?
 contratava-se um super pedreiro, porem existia limites fisicos para esse aumento
