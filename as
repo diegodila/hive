@@ -28,7 +28,7 @@
 1.10 em qual linguagem o hadoop foi criado?
 
 
-1.11 quem criou o hive?
+1.11 qual empresa criou o hive?
 
 
 1.12 o que programação imperativa?
@@ -49,7 +49,7 @@
 1.17 qual linguagem de programação hive utiliza?
 
 
-1.18 o que o hive é parecido com um dw?
+1.18 o que o hive é parecido com um dw? o que é o Hive?
 
 
 1.19 que tipo de sistema de processamento de dados o hadoop é, transacional ou analitico?

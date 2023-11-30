@@ -43,7 +43,7 @@ especificação do objetivos, o que fazer
 programação imperativa
 
 1.15 em qual arquitetura o hive é baseado?
-baseado na arquitetura map reduce / hdfs
+baseado na arquitetura map reduce / hdfs (hadoop)
 
 1.16 com quais tipos de dados o hive trabalha e qual sistema é semelhante?
 dados estruturados, semelhante a um bd relacional
@@ -51,9 +51,10 @@ dados estruturados, semelhante a um bd relacional
 1.17 qual linguagem de programação hive utiliza?
 sql
 
-1.18 o que o hive é parecido com um dw?
+1.18 o que o hive é parecido com um dw? o que é o Hive?
 é um armazem de dados distribuido sobre map reduce/hdfs
-Apache Hive é um software de Data Warehouse desenvolvido em cima do Apache Hadoop para consulta e análise de dados. O Hive oferece uma interface semelhante ao SQL para consulta de dados em diferentes bancos de dados e sistemas de arquivos integrados ao Hadoop
+Apache Hive é um software de Data Warehouse desenvolvido em cima do Apache Hadoop para consulta e análise de dados. O Hive oferece uma interface semelhante ao SQL para consulta de dados em diferentes bancos de dados e sistemas de arquivos integrados ao Hadoop. The Apache Hive ™ is a distributed, fault-tolerant data warehouse system that enables analytics at a massive scale and facilitates reading, writing, and managing petabytes of data residing in distributed storage using SQL.
+
 
 1.19 que tipo de sistema de processamento de dados o hadoop é, transacional ou analitico?
 analitico
