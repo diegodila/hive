@@ -30,7 +30,7 @@ slaves - pedreiros
 1.10 em qual linguagem o hadoop foi criado?
 foi criado em java
 
-1.11 quem criou o hive?
+1.11 qual empresa criou o hive?
 o facebook
 
 1.12 o que programação imperativa?
@@ -52,13 +52,14 @@ dados estruturados, semelhante a um bd relacional
 sql
 
 1.18 o que o hive é parecido com um dw?
-é uma armazem de dados distribuido sobre map reduce/hdfs
+é um armazem de dados distribuido sobre map reduce/hdfs
+Apache Hive é um software de Data Warehouse desenvolvido em cima do Apache Hadoop para consulta e análise de dados. O Hive oferece uma interface semelhante ao SQL para consulta de dados em diferentes bancos de dados e sistemas de arquivos integrados ao Hadoop
 
 1.19 que tipo de sistema de processamento de dados o hadoop é, transacional ou analitico?
 analitico
 
 1.20 o que é o apache impala?
-uma alternativa para sql em hadoop, com engine do hive sobre mapreduce
+uma alternativa para sql ao hadoop, com engine do hive sobre mapreduce
 
 1.21 qual o objetivo do impala?
 ser mais rapido que o hive padrao (com engine MR)
